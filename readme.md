@@ -1,5 +1,7 @@
 # Trabalho final
 
+Aluno: Gabriel Batista Albino Silva - 16/0028361
+
 Professor, não deu pra fazer o servidor central, devido a isso deixo abaixo as informações para simular o servidor central via MQTTBOX:
 
 Outro problema: Não consegui identificar o que estou fazendo de errado, porém a interrupção de pulldown não está acontecendo mesmo com o código abaixo setado:
@@ -13,15 +15,17 @@ Porém tenho certeza que a lógica para envio da mudança de estado está corret
 
 * Tópico para assistir: fse2020/160028361/#
 
-* Tópico para comunicação: 
+* Tópico para comunicação com a placa: fse2020/160028361/dispositivos/84:cc:a8:5d:1f:9c
+
+
 * Json para configurar placa: 
 ```json
-{
-  "tipo": "cadastro-realizado", 
-  "name": "NomeComodo",
-  "entrada": "NomeEntrada",
-  "saida": "NomeSaida"
-}
+  {
+    "tipo": "cadastro-realizado", 
+    "nome": "NomeComodo",
+    "entrada": "NomeEntrada",
+    "saida": "NomeSaida"
+  }
 ```
 * Json para acionar o led:
 ```json
